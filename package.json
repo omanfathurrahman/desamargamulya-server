@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "prepare": "nitro prepare",
+    "preview": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "seed": "pnpx prisma db seed",
+    "studio": "pnpx prisma studio"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "5.15.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-ts": "^2.2.1",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "nitropack": "latest",
+    "prisma": "^5.15.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.15.6"
+  },
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
+}

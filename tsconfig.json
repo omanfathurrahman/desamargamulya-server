@@ -1,0 +1,5 @@
+// https://nitro.unjs.io/guide/typescript
+{
+  "exclude": ["./eslint.config.js"],
+  "extends": "./.nitro/types/tsconfig.json"
+}
